@@ -1,0 +1,188 @@
+ /* Estilos globais */
+ body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arimo', sans-serif;
+  background-color: #fff;
+}
+
+/* Estilo do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+/*  background-color: #e9492a;*/
+  background: linear-gradient(to right, #e9492a, #e72357);
+  /* rosa e72357*/
+  color: #fff;
+  padding: 0 20px;
+  margin: 20px 0 20px 0;
+}
+/*Arruma a direção do texto*/
+.left-header{
+  text-align-last:right ;
+}
+
+.right-header{
+  position: relative;
+
+}
+.tamanho-fonte{
+  font-size: 12px;
+}
+/*Estilo da imagem*/
+.logo img {
+  margin-left: 10px; 
+}
+/*Estilo da imagem da logo da garota*/
+.logo2 img {
+  margin-top: 60px;
+  margin-left: 400px;
+}
+
+
+/* Estilo do conteiner principal */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 24px;
+}
+/*Alinha o titulo do main container para o começo*/
+.main-container h2 {
+  margin-top: 5px;
+  align-self: flex-start;
+}
+/*alinha o texto do main container para o começo*/
+.main-container p {
+  align-self: flex-start;
+}
+/*Estilo da imagem do main container*/
+.container-img{
+  width: 100%; /* ajuste o tamanho da imagem conforme necessário */        
+  margin: 0 5px 20px 5px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+}
+/* estilo da fonte do main container*/
+.font{
+  font-size: 8px;
+  margin-top: 10px;
+}
+/*Estilo da barras que ficam abaixo da fonte*/
+.bar-img{
+  align-self: flex-start;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Estilo dos títulos */
+h2 {
+  margin-top: 5;
+}
+
+/* Estilo dos parágrafos */
+p {
+  margin: 0;
+}
+
+/* Estilo dos contêineres responsivos */
+.responsive-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilo dos sub containers*/
+.responsive-container .sub-container {
+  flex: 1;
+  max-width: 510px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 24px;
+}
+
+/* Estilo das imagens dentro dos sub-contêineres */
+.sub-container-img {
+  width: 100%; /* A imagem ocupará 100% da largura do sub-contêiner */
+  margin-bottom: 20px;
+  height: 400px; /* Defina a altura desejada para as imagens */
+  display: flex;
+  align-items: center;
+}
+/* Estilo do texto rodapé*/
+.footer-text{
+  text-align: center;
+  font-size: 8.3px;
+}
+
+@media screen and (max-width: 800px) {
+  /* Dimuni o tamanho da logo quando a tela diminui*/
+  .logo img{
+      width: 100px;
+  }
+  /* Dimuni o tamanho da logo quando a tela diminui*/
+  .logo2 img{
+      margin: 80px 0 0 0;
+      width: 50px;
+  }
+  /* Dimuni o tamanho do  container quando a tela diminui*/
+  .main-container {
+      width: 80%;
+
+  }
+  /*Muda a direção do container para coluna quando a tela diminui*/    
+  .responsive-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  /* Ajusta o container quando a tela diminui*/
+  .sub-container{
+      width: 80%; 
+  }
+  /*Ajusta a imagem quando a tela diminui*/
+  .sub-container-img{
+      height: 132.95px;
+  }
+  /* Dimuni o tamanho do titulo quando a tela diminui*/
+  h2{
+      font-size: 10px;
+      color: black;
+  }
+  /* Dimuni o tamanho da fonte quando a tela diminui*/
+  header p{
+      font-size: 12px;
+  }/* Retira o texto quando a tela diminui*/
+  .main-container p {
+      display: none;
+  }  /* Retira a  parte da fonte quando a tela diminui*/
+  .font{
+      display: none;
+  }
+       
+}      
+
+
+/* Estilo do footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #ff7707;
+  color: #ffffff;
+  margin: 20px 0 20px 0;
+  
+}
